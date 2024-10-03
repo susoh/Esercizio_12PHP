@@ -7,7 +7,25 @@
 </head>
 <body>
     <?php
-        $
+        function funzione ($colore) {
+            switch ($colore) {
+                case 'r':
+                    return 'red';
+                    break;
+                case 'v':
+                    return 'green';
+                    break;
+                case 'b':
+                    return 'blue';
+                    break;
+                default:
+                    return 'black';
+                    break;
+            }
+        }
+
+        $c = "r";
+        echo "<p style='color:".funzione($c).";'>QUESTO PARAGRAFO è DI COLORE ". funzione($c) . "</p>";
     ?>
 </body>
 </html>
